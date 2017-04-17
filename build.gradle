@@ -42,6 +42,15 @@ allprojects {
 
     //let project evaluate its script first
     project.afterEvaluate {
+        if (project.plugins.hasPlugin('com.android.application') || project.plugins.hasPlugin('com.android.library')) {
+            project.android {
+                lintOptions {
+                    abortOnError true
+                    baselineFile project.“file('lint_baseline.xml')
+                }
+            }
+        }
+
         //only apply to projects that have the android plugin
         if (project.plugins.hasPlugin('com.android.application')) {
             //global android setting

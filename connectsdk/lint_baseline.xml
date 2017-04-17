@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 2.3.1">
+
+    <issue
+        id="MissingPermission"
+        message="Missing permissions required by WifiManager.MulticastLock.acquire: android.permission.CHANGE_WIFI_MULTICAST_STATE"
+        errorLine1="        multicastLock.acquire();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="509"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        message="Missing permissions required by WifiManager.MulticastLock.release: android.permission.CHANGE_WIFI_MULTICAST_STATE"
+        errorLine1="            multicastLock.release();"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="556"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingPermission"
+        message="Missing permissions required by WifiManager.getConnectionInfo: android.permission.ACCESS_WIFI_STATE"
+        errorLine1="        WifiInfo wifiInfo = wifiMgr.getConnectionInfo();"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/core/Util.java"
+            line="144"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            baseURL = String.format(&quot;%s://%s:%d&quot;, urlObject.getProtocol(), urlObject.getHost(), urlObject.getPort());"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/provider/ssdp/SSDPDevice.java"
+            line="89"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details."
+        errorLine1="        android:targetSdkVersion=&quot;22&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="AndroidManifest.xml"
+            line="8"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SimpleDateFormat"
+        message="To get local formatting use `getDateInstance()`, `getDateTimeInstance()`, or `getTimeInstance()`, or use `new SimpleDateFormat(String template, Locale locale)` with for example `Locale.US` for ASCII dates."
+        errorLine1="        SimpleDateFormat df = new SimpleDateFormat(&quot;HH:mm:ss&quot;);"
+        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/DLNAService.java"
+            line="920"
+            column="31"/>
+    </issue>
+
+    <issue
+        id="WifiManagerPotentialLeak"
+        message="The WIFI_SERVICE must be looked up on the Application context or memory will leak on devices &lt; Android N. Try changing `context` to `context.getApplicationContext()` "
+        errorLine1="        WifiManager wifiMgr = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="206"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="WifiManagerPotentialLeak"
+        message="The WIFI_SERVICE must be looked up on the Application context or memory will leak on devices &lt; Android N. Try changing `context` to `context.getApplicationContext()` "
+        errorLine1="        WifiManager wifiMgr = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/core/Util.java"
+            line="143"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:support-v4 than 25.3.0 is available: 25.3.1"
+        errorLine1="    compile &quot;com.android.support:support-v4:${rootProject.ext.appCompatVersion}&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="50"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:appcompat-v7 than 25.3.0 is available: 25.3.1"
+        errorLine1="    compile &quot;com.android.support:appcompat-v7:${rootProject.ext.appCompatVersion}&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="51"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:mediarouter-v7 than 25.3.0 is available: 25.3.1"
+        errorLine1="    compile &quot;com.android.support:mediarouter-v7:${rootProject.ext.appCompatVersion}&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="52"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.gms:play-services-cast than 10.0.1 is available: 10.2.1"
+        errorLine1="    compile &apos;com.google.android.gms:play-services-cast:10.0.1&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="53"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(&quot;Timer&quot;, &quot;Timer&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/AirPlayService.java"
+            line="765"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Invalid application ID: &quot; + CastService.getApplicationID());"
+        errorLine2="                ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/discovery/provider/CastDiscoveryProvider.java"
+            line="87"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;onRoutePresentationDisplayChanged: [&quot; + route.getName() + &quot;] [&quot;"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/discovery/provider/CastDiscoveryProvider.java"
+            line="256"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;onRouteVolumeChanged: [&quot; + route.getName() + &quot;] [&quot;"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/discovery/provider/CastDiscoveryProvider.java"
+            line="284"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.d(Util.T, &quot;Service [&quot; + route.getName() + &quot;] has been removed&quot;);"
+        errorLine2="                    ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/discovery/provider/CastDiscoveryProvider.java"
+            line="293"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Exception while creating media channel&quot;, e);"
+        errorLine2="                ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="466"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Exception while launching application&quot;, e);"
+        errorLine2="                ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="481"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;Cast.Listener.onApplicationDisconnected: &quot; + statusCode);"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="1153"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;ConnectionCallbacks.onConnectionSuspended&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="1229"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;ConnectionCallbacks.onConnected, wasWaitingForReconnect: &quot; + mWaitingForReconnect);"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="1237"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;ConnectionFailedListener.onConnectionFailed &quot; + (result != null ? result: &quot;&quot;));"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/CastService.java"
+            line="1296"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.e(Util.T, &quot;Exception while removing application&quot;, e);"
+        errorLine2="            ~~~~~">
+        <location
+            file="modules/google_cast/src/com/connectsdk/service/sessions/CastWebAppSession.java"
+            line="87"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;Could not compare channel values, no data to compare against&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/core/ChannelInfo.java"
+            line="130"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;This channel info: \n&quot; + this.rawData.toString());"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/core/ChannelInfo.java"
+            line="131"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;Other channel info: \n&quot; + other.rawData.toString());"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/core/ChannelInfo.java"
+            line="132"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.w(Util.T, &quot;We found a mathcing capability class, but no priority level for the class. Please check \&quot;getPriorityLevel()\&quot; in your class&quot;);"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/device/ConnectableDevice.java"
+            line="638"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;unable to check for installed app; no service application url&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/DIALService.java"
+            line="467"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(Util.T, &quot;Invalid Time Format: &quot; + strTime);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/DLNAService.java"
+            line="926"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(Util.T, &quot;Null time argument&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/DLNAService.java"
+            line="928"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                        Log.w(Util.T, &quot;Network connection is disconnected&quot;);"
+        errorLine2="                        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="233"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.w(Util.T, &quot;Wifi is not connected yet&quot;);"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="527"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;Service added: &quot; + serviceDescription.getFriendlyName() + &quot; (&quot; + serviceDescription.getServiceID() + &quot;)&quot;);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="715"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(Util.T, &quot;onServiceRemoved: unknown service description&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="765"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;onServiceRemoved: friendlyName: &quot; + serviceDescription.getFriendlyName());"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="770"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.w(Util.T, &quot;DiscoveryProviderListener, Service Discovery Failed&quot;);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="790"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;Adding service &quot; + desc.getServiceID() + &quot; to device with address &quot; + device.getIpAddress() + &quot; and id &quot; + device.getId());"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="795"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;got message body: &quot; + body);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/netcast/NetcastHttpServer.java"
+            line="133"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;Channel Changed: &quot; + channel.getNumber());"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/netcast/NetcastHttpServer.java"
+            line="193"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;KeyboardFocused?: &quot; + focused);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/netcast/NetcastHttpServer.java"
+            line="219"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(Util.T, &quot;already connecting; not trying to connect again: &quot; + state);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="207"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(Util.T, &quot;Netcast TV does not support deeplink for Browser&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="602"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;Netcast TV&apos;s mouse has been connected&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1730"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s mouse connection has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1738"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s mouse click has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1760"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s mouse move has failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1814"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s mouse scroll has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1842"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;Add to Queue: &quot; + input);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1894"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s enter key has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1911"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s keyboard input has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="1951"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Netcast TV&apos;s power off has been failed&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="2042"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.d(&quot;&quot;, &quot;RESP &quot; + code);"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/NetcastTVService.java"
+            line="2302"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(&quot;&quot;, &quot;plist &quot; + key);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/airplay/PListParser.java"
+            line="95"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;RokuService::send() | uri = &quot; + uri);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/RokuService.java"
+            line="848"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.d(&quot;&quot;, &quot;RESP &quot; + command.getTarget());"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/RokuService.java"
+            line="929"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.d(&quot;&quot;, &quot;RESP &quot; + code);"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/RokuService.java"
+            line="939"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.e(Util.T, &quot;This device filter does not have ssdp filter info&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/provider/SSDPDiscoveryProvider.java"
+            line="225"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.w(&quot;ConnectSDK&quot;, &quot;missing string resource for \&quot;&quot; + key + &quot;\&quot;&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/device/SimpleDevicePicker.java"
+            line="98"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(&quot;SimpleDevicePicker&quot;, &quot;pairing required for device &quot; + device.getFriendlyName());"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/device/SimpleDevicePicker.java"
+            line="260"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(&quot;PtrAndKeyboardFragment&quot;, &quot;got socketPath: &quot; + socketPath);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVMouseSocketConnection.java"
+            line="51"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(&quot;PtrAndKeyboardFragment&quot;, &quot;downgraded socketPath: &quot; + this.socketPath);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVMouseSocketConnection.java"
+            line="57"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(&quot;PtrAndKeyboardFragment&quot;, &quot;connected to &quot; + uri.toString());"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVMouseSocketConnection.java"
+            line="80"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;attempting to disconnect to &quot; + serviceDescription.getIpAddress());"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/WebOSTVService.java"
+            line="332"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;ExternalInputInfo has no id&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/WebOSTVService.java"
+            line="1863"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Connect mouse error: &quot; + error.getMessage());"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/WebOSTVService.java"
+            line="1927"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Permissions changed -- you will need to re-pair to the TV.&quot;);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/WebOSTVService.java"
+            line="2961"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;already connecting; not trying to connect again: &quot; + state);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="122"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="        Log.d(Util.T, &quot;webOS Socket [IN] : &quot; + data);"
+        errorLine2="        ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="181"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;Error Payload: &quot; + payload.toString());"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="308"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;Error Desc: &quot; + errorDesc);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="312"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.d(Util.T, &quot;executing queued command for &quot; + command.getTarget());"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="530"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;queuing command for &quot; + command.getTarget());"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="568"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;queuing command and restarting socket for &quot; + command.getTarget());"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="571"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;webOS Socket [OUT] : &quot; + message);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="692"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.d(Util.T, &quot;Expecting device cert &quot; + (expectedCert != null ? expectedCert.getSubjectDN() : &quot;(any)&quot;));"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="808"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                    Log.d(Util.T, &quot;Device presented cert &quot; + cert.getSubjectDN());"
+        errorLine2="                    ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="819"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="                Log.w(Util.T, &quot;Play State Error: &quot; + errorMsg);"
+        errorLine2="                ~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/sessions/WebOSWebAppSession.java"
+            line="100"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;"
+        errorLine1="            Log.e(Util.T, &quot;This device filter does not have zeroconf filter info&quot;);"
+        errorLine2="            ~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/provider/ZeroconfDiscoveryProvider.java"
+            line="269"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers"
+        errorLine1="        public void checkClientTrusted(X509Certificate[] chain, String authType)"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/service/webos/WebOSTVServiceSocketClient.java"
+            line="802"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        message="Do not place Android context classes in static fields (static reference to `DiscoveryManager` which has field `context` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        errorLine1="    private static DiscoveryManager instance;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="core/src/com/connectsdk/discovery/DiscoveryManager.java"
+            line="112"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.connect_sdk_picker_select_device` appears to be unused"
+        errorLine1="    &lt;string name=&quot;connect_sdk_picker_select_device&quot;>Select a device&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="res/values/connect_sdk_strings.xml"
+            line="2"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.connect_sdk_pairing_simple_title_tv` appears to be unused"
+        errorLine1="    &lt;string name=&quot;connect_sdk_pairing_simple_title_tv&quot;>Pairing request&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="res/values/connect_sdk_strings.xml"
+            line="3"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.connect_sdk_pairing_simple_prompt_tv` appears to be unused"
+        errorLine1="    &lt;string name=&quot;connect_sdk_pairing_simple_prompt_tv&quot;>Confirm pairing on the TV&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="res/values/connect_sdk_strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.connect_sdk_pairing_pin_prompt_tv` appears to be unused"
+        errorLine1="    &lt;string name=&quot;connect_sdk_pairing_pin_prompt_tv&quot;>Enter pairing code displayed on TV&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="res/values/connect_sdk_strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.connect_sdk_connection_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;connect_sdk_connection_failed&quot;>Enter pairing code displayed on TV&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="res/values/connect_sdk_strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+</issues>

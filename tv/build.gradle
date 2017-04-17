@@ -65,10 +65,6 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
-
     splits {
         abi {
             enable true
