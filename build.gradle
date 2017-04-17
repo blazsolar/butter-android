@@ -46,7 +46,7 @@ allprojects {
             project.android {
                 lintOptions {
                     abortOnError true
-                    baselineFile project.“file('lint_baseline.xml')
+                    baselineFile project.file('lint_baseline.xml')
                 }
             }
         }
