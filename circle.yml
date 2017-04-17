@@ -6,6 +6,7 @@ dependencies:
   pre:
     - wget https://dl.google.com/android/repository/tools_r25.2.3-linux.zip
     - unzip -o tools_r25.2.3-linux.zip -d /usr/local/android-sdk-linux/
+    - cp -r config/ci/licenses /usr/local/android-sdk-linux/
     - /usr/local/android-sdk-linux/tools/bin/sdkmanager --update
 #    - if ! $(grep -q "Revision=41.0.0" $ANDROID_HOME/extras/android/m2repository/source.properties); then echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"; fi
 #    - if ! $(grep -q "Revision=25.2.4" $ANDROID_HOME/tools/source.properties); then echo y | android update sdk --no-ui --all --filter "tools"; fi
