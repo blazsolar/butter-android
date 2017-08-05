@@ -1,5 +1,5 @@
 language: android
-sudo: required
+sudo: false
 jdk: oraclejdk8
 env:
   matrix:
@@ -29,4 +29,4 @@ script:
   - android-wait-for-emulator
   - adb devices
   - adb shell input keyevent 82 &
-  - ./gradlew check connectedCheck -PdisablePreDex --stacktrace
+  - travis_wait ./gradlew check connectedCheck -PdisablePreDex --stacktrace
