@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.0.0-alpha9">
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    protected void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/main/TVMainActivity.java"
+            line="36"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    protected void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/detail/TVMediaDetailActivity.java"
+            line="46"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/search/TVSearchActivity.java"
+            line="34"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    protected void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/terms/TVTermsActivity.java"
+            line="31"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/trailer/TVTrailerPlayerActivity.java"
+            line="34"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    protected void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                   ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/update/TVUpdateActivity.java"
+            line="30"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="        cardView.setTitleText(StringUtils.capWords(context.getString(moreItem.title).toLowerCase()));"
+        errorLine2="                                                                                     ~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/presenters/MorePresenter.java"
+            line="51"
+            column="86"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:palette-v7 than 25.4.0 is available: 26.0.0"
+        errorLine1="    implementation &quot;com.android.support:palette-v7:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="74"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:leanback-v17 than 25.4.0 is available: 26.0.0"
+        errorLine1="    implementation &quot;com.android.support:leanback-v17:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="75"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully."
+        errorLine1="        webView.getSettings().setJavaScriptEnabled(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/tv/ui/preferences/fragment/TVWebViewFragment.java"
+            line="40"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ExportedContentProvider"
+        message="Exported content providers can provide access to potentially sensitive data"
+        errorLine1="        &lt;provider android:authorities=&quot;butter.droid.tv.RecommendationContentProvider&quot;"
+        errorLine2="        ^">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="185"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@android:color/black` with a theme that also paints a background (inferred theme is `@style/Theme.Butter.TV`)"
+        errorLine1="  android:background=&quot;@android:color/black&quot;>"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="24"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.changelog` appears to be unused"
+        errorLine1="&lt;changelog bulletedList=&quot;true&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/raw/changelog.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.selectable_focused` appears to be unused"
+        errorLine1=" &lt;color name=&quot;selectable_focused&quot;>#22FFFFFF&lt;/color>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="22"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.selectable_pressed` appears to be unused"
+        errorLine1=" &lt;color name=&quot;selectable_pressed&quot;>#55FFFFFF&lt;/color>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.episode_row_background_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;episode_row_background_color&quot;>#444&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="31"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.episode_row_background_color_focused` appears to be unused"
+        errorLine1="    &lt;color name=&quot;episode_row_background_color_focused&quot;>#555&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="32"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.leanback_track_row_separator_highlight_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;leanback_track_row_separator_highlight_color&quot;>#1affffff&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="33"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.subtitle_default_text_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;subtitle_default_text_color&quot;>#FFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="35"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.subtitle_default_overlay` appears to be unused"
+        errorLine1="    &lt;color name=&quot;subtitle_default_overlay&quot;>#55000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="36"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.card_noimage_padding` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;card_noimage_padding&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="26"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_control_button_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_control_button_size&quot;>96dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="28"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_controls_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_controls_margin&quot;>32dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_controls_bottom_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_controls_bottom_margin&quot;>120dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="31"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_controls_padding` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_controls_padding&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="32"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_controls_corners` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_controls_corners&quot;>3dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="33"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_controls_distance` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_controls_distance&quot;>8dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="34"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.player_subtitles_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;player_subtitles_margin&quot;>24dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="35"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.integer.player_subtitles_default_text_size` appears to be unused"
+        errorLine1="    &lt;integer name=&quot;player_subtitles_default_text_size&quot;>24&lt;/integer>"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="36"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.leanback_track_row_width` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;leanback_track_row_width&quot;>960dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="38"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.leanback_episode_row_height` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;leanback_episode_row_height&quot;>48dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="39"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.leanback_season_row_height` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;leanback_season_row_height&quot;>64dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.leanback_track_row_horizontal_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;leanback_track_row_horizontal_margin&quot;>132.0dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="41"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.leanback_track_row_horizontal_padding` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;leanback_track_row_horizontal_padding&quot;>32.0dip&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="42"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_trending` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_trending&quot;>@drawable/filter_trending&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="20"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_popular_now` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_popular_now&quot;>@drawable/filter_popular_now&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="21"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_top_rated` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_top_rated&quot;>@drawable/filter_top_rated&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="22"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_genres` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_genres&quot;>@drawable/filter_genres&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="23"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_release_date` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_release_date&quot;>@drawable/filter_updated&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="24"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_year` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_year&quot;>@drawable/filter_release_date&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="25"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.yts_filter_a_to_z` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;yts_filter_a_to_z&quot;>@drawable/filter_a_to_z&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="26"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_trending` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_trending&quot;>@drawable/filter_trending&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="28"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_popular_now` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_popular_now&quot;>@drawable/filter_popular_now&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="29"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_top_rated` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_top_rated&quot;>@drawable/filter_top_rated&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="30"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_last_updated` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_last_updated&quot;>@drawable/filter_updated&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="31"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_year` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_year&quot;>@drawable/filter_release_date&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="32"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.eztv_filter_a_to_z` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;eztv_filter_a_to_z&quot;>@drawable/filter_a_to_z&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="33"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.haru_filter_popular` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;haru_filter_popular&quot;>@drawable/filter_popular_now&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="35"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.haru_filter_a_to_z` appears to be unused"
+        errorLine1="    &lt;drawable name=&quot;haru_filter_a_to_z&quot;>@drawable/filter_a_to_z&lt;/drawable>"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/drawable.xml"
+            line="36"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.episode_row` appears to be unused"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.episode_row_selector` appears to be unused"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/episode_row_selector.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_a_to_z` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_a_to_z.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_genres` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_genres.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_popular_now` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_popular_now.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_release_date` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_release_date.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_top_rated` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_top_rated.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.filter_updated` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/filter_updated.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_videoplayer` appears to be unused"
+        errorLine1="&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_av_forward` appears to be unused">
+        <location
+            file="src/main/res/drawable-hdpi/ic_av_forward.png"/>
+        <location
+            file="src/main/res/drawable-xhdpi/ic_av_forward.png"/>
+        <location
+            file="src/main/res/drawable-xxhdpi/ic_av_forward.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_av_rewind` appears to be unused">
+        <location
+            file="src/main/res/drawable-hdpi/ic_av_rewind.png"/>
+        <location
+            file="src/main/res/drawable-xhdpi/ic_av_rewind.png"/>
+        <location
+            file="src/main/res/drawable-xxhdpi/ic_av_rewind.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.more_player_tests` appears to be unused">
+        <location
+            file="src/main/res/drawable-tvdpi/more_player_tests.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.player_controls_background` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/player_controls_background.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.player_info_background` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/player_info_background.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.season_header_row` appears to be unused"
+        errorLine1="&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.loading_details` appears to be unused"
+        errorLine1=" &lt;string name=&quot;loading_details&quot;>Loading details…&lt;/string>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/values.xml"
+            line="22"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly useless; transfer the `background` attribute to the other view"
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="38"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly useless"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-hdpi`: banner.png, butter_logo_placeholder.9.png, header_logo.png, ic_settings.png">
+        <location
+            file="src/main/res/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xhdpi`: butter_logo_placeholder.9.png, header_logo.png, ic_settings.png">
+        <location
+            file="src/main/res/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xxhdpi`: banner.png (found in drawable-xhdpi)">
+        <location
+            file="src/main/res/drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        message="Missing density variation folders in `src/debug/res`: drawable-hdpi, drawable-mdpi, drawable-xxhdpi"
+        includedVariants="debug"
+        excludedVariants="release">
+        <location
+            file="src/debug/res"/>
+    </issue>
+
+    <issue
+        id="IconMissingDensityFolder"
+        message="Missing density variation folders in `src/main/res`: drawable-mdpi">
+        <location
+            file="src/main/res"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        errorLine1="    &lt;application android:vmSafeMode=&quot;true&quot; />"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        includedVariants="debug"
+        excludedVariants="release">
+        <location
+            file="src/debug/AndroidManifest.xml"
+            line="22"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="            android:paddingStart=&quot;@dimen/leanback_track_row_horizontal_padding&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="52"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="61"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="79"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        errorLine1="                android:paddingLeft=&quot;4dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/guidance_type1.xml"
+            line="52"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        errorLine1="        android:paddingLeft=&quot;16dp&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="32"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingRight` you should probably also define `paddingLeft` for right-to-left symmetry"
+        errorLine1="            android:paddingRight=&quot;32dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;32dp&quot;` to better support right-to-left layouts"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="52"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;32dp&quot;` to better support right-to-left layouts"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="61"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="                android:gravity=&quot;center|right&quot;"
+        errorLine2="                                 ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="78"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;32dp&quot;` to better support right-to-left layouts"
+        errorLine1="                android:paddingRight=&quot;32dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/episode_row.xml"
+            line="79"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_alignLeft` with `android:layout_alignStart=&quot;@+id/guidance_title&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_alignLeft=&quot;@+id/guidance_title&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/guidance_type1.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;4dp&quot;` to better support right-to-left layouts"
+        errorLine1="                android:paddingLeft=&quot;4dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/guidance_type1.xml"
+            line="52"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingLeft` with `android:paddingStart=&quot;16dp&quot;` to better support right-to-left layouts"
+        errorLine1="        android:paddingLeft=&quot;16dp&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="32"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Use &quot;`start`&quot; instead of &quot;`left`&quot; to ensure correct behavior in right-to-left locales"
+        errorLine1="            android:gravity=&quot;left|bottom&quot;"
+        errorLine2="                             ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="40"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:paddingRight` with `android:paddingEnd=&quot;32dp&quot;` to better support right-to-left layouts"
+        errorLine1="            android:paddingRight=&quot;32dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/season_header_row.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlEnabled"
+        message="The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest">
+        <location
+            file="src/main/AndroidManifest.xml"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.0.0-alpha9">
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:appcompat-v7 than 25.4.0 is available: 26.0.0"
+        errorLine1="    api &quot;com.android.support:appcompat-v7:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="53"
+            column="5"/>
+    </issue>
+
+</issues>

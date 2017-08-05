@@ -17,6 +17,7 @@
 
 package butter.droid.base.content;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -59,6 +60,7 @@ public class ObscuredSharedPreferences implements SharedPreferences {
     public class Editor implements SharedPreferences.Editor {
         protected SharedPreferences.Editor delegate;
 
+        @SuppressLint("CommitPrefEdits") // done in commit method
         public Editor() {
             this.delegate = ObscuredSharedPreferences.this.delegate.edit();
         }

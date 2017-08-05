@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.0.0-alpha9">
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:appcompat-v7 than 25.4.0 is available: 26.0.0"
+        errorLine1="    api &quot;com.android.support:appcompat-v7:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="51"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_action` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_action&quot;>Action&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_adventure` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_adventure&quot;>Adventure&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_animation` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_animation&quot;>Animation&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_biography` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_biography&quot;>Biography&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_comedy` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_comedy&quot;>Comedy&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_crime` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_crime&quot;>Crime&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_documentary` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_documentary&quot;>Documentary&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_drama` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_drama&quot;>Drama&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_family` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_family&quot;>Family&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_fantasy` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_fantasy&quot;>Fantasy&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_film_noir` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_film_noir&quot;>Film-Noir&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_history` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_history&quot;>History&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_horror` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_horror&quot;>Horror&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_music` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_music&quot;>Music&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_musical` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_musical&quot;>Musical&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_mystery` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_mystery&quot;>Mystery&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_romance` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_romance&quot;>Romance&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="37"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_sci_fi` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_sci_fi&quot;>Sci-Fi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_sport` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_sport&quot;>Sport&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_thriller` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_thriller&quot;>Thriller&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_war` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_war&quot;>War&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.genre_western` appears to be unused"
+        errorLine1="    &lt;string name=&quot;genre_western&quot;>Western&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings_genre.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+</issues>

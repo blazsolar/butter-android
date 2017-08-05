@@ -35,11 +35,11 @@ public class Optional<T> {
         this.value = value;
     }
 
-    public static<T> Optional<T> empty() {
+    public static <T> Optional<T> empty() {
         return new Optional<>();
     }
 
-    public static<T> Optional<T> of(T value) {
+    public static <T> Optional<T> of(T value) {
         return new Optional<>(value);
     }
 

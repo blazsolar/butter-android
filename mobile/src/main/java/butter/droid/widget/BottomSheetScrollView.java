@@ -21,7 +21,6 @@ import static android.R.attr.y;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.ScrollView;
@@ -53,21 +52,14 @@ public class BottomSheetScrollView extends ScrollView {
     }
 
     public void animateScrollTo(int targetScrollY, int duration) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            ValueAnimator realSmoothScrollAnimation = ValueAnimator.ofInt(getScrollY(), targetScrollY);
-            realSmoothScrollAnimation.setDuration(duration);
-            realSmoothScrollAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                @Override
-                public void onAnimationUpdate(ValueAnimator animation) {
-                    int scrollTo = (Integer) animation.getAnimatedValue();
-                    scrollTo(0, scrollTo);
-                }
-            });
+        ValueAnimator realSmoothScrollAnimation = ValueAnimator.ofInt(getScrollY(), targetScrollY);
+        realSmoothScrollAnimation.setDuration(duration);
+        realSmoothScrollAnimation.addUpdateListener(animation -> {
+            int scrollTo = (Integer) animation.getAnimatedValue();
+            scrollTo(0, scrollTo);
+        });
 
-            realSmoothScrollAnimation.start();
-        } else {
-            smoothScrollTo(0, targetScrollY);
-        }
+        realSmoothScrollAnimation.start();
     }
 
     @Override
@@ -114,6 +106,7 @@ public class BottomSheetScrollView extends ScrollView {
     }
 
     public interface Listener {
+
         void onScroll(int scrollY, Direction direction);
 
         void onTouch(boolean touching);

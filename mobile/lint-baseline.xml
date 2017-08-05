@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.0.0-alpha9">
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/about/AboutActivity.java"
+            line="44"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/beam/BeamPlayerActivity.java"
+            line="52"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/media/detail/MediaDetailActivity.java"
+            line="88"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/preferences/PreferencesActivity.java"
+            line="76"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/loading/StreamLoadingActivity.java"
+            line="51"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/terms/TermsActivity.java"
+            line="42"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/trailer/TrailerPlayerActivity.java"
+            line="35"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="MissingSuperCall"
+        message="Overriding method should call `super.onCreate`"
+        errorLine1="    public void onCreate(Bundle savedInstanceState) {"
+        errorLine2="                ~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/player/VideoPlayerActivity.java"
+            line="47"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="CustomViewStyleable"
+        message="By convention, the custom view (`BurtterCollapsingToolbarLayout`) and the declare-styleable (`CollapsingToolbarLayout`) should have the same name (various editor features rely on this convention)"
+        errorLine1="                R.styleable.CollapsingToolbarLayout, 0,"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/widget/BurtterCollapsingToolbarLayout.java"
+            line="54"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="CustomViewStyleable"
+        message="By convention, the custom view (`ScrimInsetsFrameLayout`) and the declare-styleable (`ScrimInsetsView`) should have the same name (various editor features rely on this convention)"
+        errorLine1="        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ScrimInsetsView, defStyle, 0);"
+        errorLine2="                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/widget/ScrimInsetsFrameLayout.java"
+            line="77"
+            column="68"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;fab&quot; in layout &quot;activity_mediadetail&quot; is missing from the following layout configurations: layout-w800dp (present in layout)"
+        errorLine1="        android:id=&quot;@+id/fab&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_mediadetail.xml"
+            line="77"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;cover_image&quot; in layout &quot;fragment_detail_about&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="            android:id=&quot;@+id/cover_image&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_detail_about.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;health&quot; in layout &quot;fragment_detail_about&quot; is missing from the following layout configurations: layout-w800dp (present in layout)"
+        errorLine1="                android:id=&quot;@+id/health&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_about.xml"
+            line="76"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;magnet&quot; in layout &quot;fragment_detail_about&quot; is missing from the following layout configurations: layout-w800dp (present in layout)"
+        errorLine1="                android:id=&quot;@+id/magnet&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_about.xml"
+            line="87"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;watch_trailer&quot; in layout &quot;fragment_detail_about&quot; is missing from the following layout configurations: layout-w800dp (present in layout)"
+        errorLine1="            android:id=&quot;@+id/watch_trailer&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_about.xml"
+            line="143"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;cover_image&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="            android:id=&quot;@+id/cover_image&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;title&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                    android:id=&quot;@+id/title&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="41"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;rating&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                        android:id=&quot;@+id/rating&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="58"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;health&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                        android:id=&quot;@+id/health&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="72"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;magnet&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                        android:id=&quot;@+id/magnet&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="82"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;meta&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                    android:id=&quot;@+id/meta&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="92"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;fab&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                android:id=&quot;@+id/fab&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="103"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;synopsis&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                android:id=&quot;@+id/synopsis&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="117"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;info_buttons&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                android:id=&quot;@+id/info_buttons&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="136"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;read_more&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                    android:id=&quot;@+id/read_more&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="150"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;watch_trailer&quot; in layout &quot;fragment_moviedetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="                    android:id=&quot;@+id/watch_trailer&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="158"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;about_content&quot; in layout &quot;fragment_showdetail&quot; is missing from the following layout configurations: layout (present in layout-w800dp)"
+        errorLine1="            android:id=&quot;@+id/about_content&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_showdetail.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;background&quot; in layout &quot;fragment_showdetail&quot; is missing from the following layout configurations: layout-w800dp (present in layout)"
+        errorLine1="        android:id=&quot;@+id/background&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_showdetail.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="        android:transitionName=&quot;background&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/activity_mediadetail.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="                android:transitionName=&quot;background&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_mediadetail.xml"
+            line="30"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `elevation` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="            android:elevation=&quot;4dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/activity_mediadetail.xml"
+            line="66"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="            android:transitionName=&quot;content&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/activity_mediadetail.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="            android:transitionName=&quot;content&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_mediadetail.xml"
+            line="71"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="                    android:textDirection=&quot;locale&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_detail_about.xml"
+            line="60"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="                android:textDirection=&quot;locale&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_detail_about.xml"
+            line="103"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="            android:textDirection=&quot;locale&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_about.xml"
+            line="115"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `elevation` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="    android:elevation=&quot;4dp&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_dialog_episode.xml"
+            line="25"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="                            android:textDirection=&quot;locale&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_episode_layout.xml"
+            line="162"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `elevation` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="                        android:elevation=&quot;5dp&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_episode_layout.xml"
+            line="177"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="                    android:textDirection=&quot;locale&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="47"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `elevation` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="                android:elevation=&quot;5dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="114"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="                android:textDirection=&quot;locale&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="129"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="        android:transitionName=&quot;background&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_streamloading.xml"
+            line="28"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="            android:textDirection=&quot;anyRtl&quot;/>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionOrdering` is only used in API level 19 and higher (current min is 16)"
+        errorLine1="    android:transitionOrdering=&quot;together&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/transition/movie_detail_exit.xml"
+            line="20"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `targetName` is only used in API level 21 and higher (current min is 16)"
+        errorLine1="            &lt;target android:targetName=&quot;content&quot; />"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/transition/movie_detail_exit.xml"
+            line="23"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `transitionOrdering` is only used in API level 19 and higher (current min is 16)"
+        errorLine1="    android:transitionOrdering=&quot;together&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/transition/movie_detail_shared_exit.xml"
+            line="20"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `textDirection` is only used in API level 17 and higher (current min is 16)"
+        errorLine1="        android:textDirection=&quot;locale&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/optionselector.xml"
+            line="32"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:recyclerview-v7 than 25.4.0 is available: 26.0.0"
+        errorLine1="    implementation &quot;com.android.support:recyclerview-v7:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="76"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:mediarouter-v7 than 25.4.0 is available: 26.0.0"
+        errorLine1="    implementation &quot;com.android.support:mediarouter-v7:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="77"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.support:customtabs than 25.4.0 is available: 26.0.0"
+        errorLine1="    implementation &quot;com.android.support:customtabs:$appCompatVersion&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="87"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_action_bar_default_height_material` is marked as private in com.android.support:design"
+        errorLine1="                    getResources().getDimensionPixelSize(R.dimen.abc_action_bar_default_height_material) + statusBarHeight));"
+        errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/player/abs/AbsPlayerFragment.java"
+            line="362"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@drawable/abc_ic_clear_material` is marked as private in com.android.support:design"
+        errorLine1="        toolbar.setNavigationIcon(R.drawable.abc_ic_clear_material);"
+        errorLine2="                                             ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/beam/fragment/BeamPlayerFragment.java"
+            line="334"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@styleable/CollapsingToolbarLayout_toolbarId` is marked as private in com.android.support:design"
+        errorLine1="        toolbarId = attr.getResourceId(android.support.design.R.styleable.CollapsingToolbarLayout_toolbarId, -1);"
+        errorLine2="                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/widget/BurtterCollapsingToolbarLayout.java"
+            line="57"
+            column="75"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/abc_action_bar_default_height_material` is marked as private in com.android.support:design"
+        errorLine1="                R.dimen.abc_action_bar_default_height_material);"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/utils/ToolbarUtils.java"
+            line="36"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully."
+        errorLine1="        webSettings.setJavaScriptEnabled(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/base/WebViewActivity.java"
+            line="34"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup. More info: https://developer.android.com/training/backup/autosyncapi.html"
+        errorLine1="    &lt;application"
+        errorLine2="    ^">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="17"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/bg_dark` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="    android:background=&quot;@color/bg_dark&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_beamplayer.xml"
+            line="25"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/bg` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="    android:background=&quot;@color/bg&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/nav_drawer_color` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1=" android:background=&quot;@color/nav_drawer_color&quot;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_navigation_drawer.xml"
+            line="21"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/bg` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="        android:background=&quot;@color/bg&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-w800dp/fragment_showdetail.xml"
+            line="6"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@android:color/black` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="        android:background=&quot;@android:color/black&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/overlay` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="    android:background=&quot;@color/overlay&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/media_griditem.xml"
+            line="26"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/overlay` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1="    android:background=&quot;@color/overlay&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/media_griditem_loading.xml"
+            line="24"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `?attr/colorPrimary` with a theme that also paints a background (inferred theme is `@style/Theme.Butter`)"
+        errorLine1=" android:background=&quot;?attr/colorPrimary&quot;"
+        errorLine2=" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/toolbar.xml"
+            line="30"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.changelog` appears to be unused"
+        errorLine1="&lt;changelog bulletedList=&quot;true&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/raw/changelog.xml"
+            line="19"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.fragment_media_container` appears to be unused"
+        errorLine1="&lt;android.support.v4.view.ViewPager"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/fragment_media_container.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Theme_HiddenActivity` appears to be unused"
+        errorLine1=" &lt;style name=&quot;Theme.HiddenActivity&quot; parent=&quot;Theme.AppCompat.NoActionBar&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="20"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `LinearLayout` layout or its `RelativeLayout` parent is useless; transfer the `background` attribute to the other view"
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/fragment_moviedetail.xml"
+            line="23"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `RelativeLayout` layout or its `RelativeLayout` parent is useless; transfer the `background` attribute to the other view"
+        errorLine1="        &lt;RelativeLayout"
+        errorLine2="        ^">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="62"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.png: 48x48 dp (72x72 px), mipmap-mdpi/ic_launcher.png: 48x48 dp (48x48 px), mipmap-xhdpi/ic_launcher.png: 64x64 dp (128x128 px), mipmap-xxhdpi/ic_launcher.png: 48x48 dp (144x144 px), mipmap-xxxhdpi/ic_launcher.png: 48x48 dp (192x192 px)"
+        includedVariants="debug"
+        excludedVariants="release">
+        <location
+            file="src/debug/res/mipmap-mdpi/ic_launcher.png"/>
+        <location
+            file="src/debug/res/mipmap-xxxhdpi/ic_launcher.png"/>
+        <location
+            file="src/debug/res/mipmap-xxhdpi/ic_launcher.png"/>
+        <location
+            file="src/debug/res/mipmap-hdpi/ic_launcher.png"/>
+        <location
+            file="src/debug/res/mipmap-xhdpi/ic_launcher.png"/>
+    </issue>
+
+    <issue
+        id="AppLinkUrlError"
+        message="`android:scheme` cannot be empty"
+        errorLine1="                &lt;data android:scheme=&quot;&quot; />"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="159"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="AppLinkUrlError"
+        message="Mime-type matching is case sensitive and should only use lower-case characters"
+        errorLine1="                &lt;data android:mimeType=&quot;application/x-mpegURL&quot;/>"
+        errorLine2="                                        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="184"
+            column="41"/>
+    </issue>
+
+    <issue
+        id="AppLinkUrlError"
+        message="`android:scheme` cannot be empty"
+        errorLine1="                &lt;data android:scheme=&quot;&quot;/>"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="195"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="    &lt;Button"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/activity_terms.xml"
+            line="59"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        errorLine1="    &lt;Button"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/activity_terms.xml"
+            line="66"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view ``Toolbar`` has `setOnTouchListener` called on it but does not override `performClick`"
+        errorLine1="        toolbar.setOnTouchListener(touchHandler);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/player/abs/AbsPlayerFragment.java"
+            line="355"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `BottomSheetScrollView` overrides `onTouchEvent` but not `performClick`"
+        errorLine1="    public boolean onTouchEvent(MotionEvent ev) {"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/widget/BottomSheetScrollView.java"
+            line="82"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`VideoPlayerTouchHandler#onTouch` should call `View#performClick` when a click is detected"
+        errorLine1="    @Override public boolean onTouch(final View view, final MotionEvent event) {"
+        errorLine2="                             ~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/player/VideoPlayerTouchHandler.java"
+            line="74"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="            ^">
+        <location
+            file="src/main/res/layout/activity_mediadetail.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="  &lt;ImageView"
+        errorLine2="  ^">
+        <location
+            file="src/main/res/layout/fragment_about.xml"
+            line="30"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/fragment_beamplayer.xml"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/fragment_beamplayer.xml"
+            line="38"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                    &lt;ImageView"
+        errorLine2="                    ^">
+        <location
+            file="src/main/res/layout/fragment_beamplayer.xml"
+            line="172"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout-w800dp/fragment_detail_about.xml"
+            line="28"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="        ^">
+        <location
+            file="src/main/res/layout-w800dp/fragment_moviedetail.xml"
+            line="16"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/fragment_streamloading.xml"
+            line="24"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/list_icon_twoline_item.xml"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1=" &lt;ImageView"
+        errorLine2=" ^">
+        <location
+            file="src/main/res/layout/nav_drawer_header.xml"
+            line="25"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/nav_drawer_list_item.xml"
+            line="28"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="    ^">
+        <location
+            file="src/main/res/layout/optionselector.xml"
+            line="10"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="        textSpeed.setText(defaultValue + &quot; Kb/s&quot;);"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/preferences/dialog/SeekBarDialogFragment.java"
+            line="73"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="        textSpeed.setText(defaultValue + &quot; Kb/s&quot;);"
+        errorLine2="                                         ~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/preferences/dialog/SeekBarDialogFragment.java"
+            line="73"
+            column="42"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        errorLine1="                textSpeed.setText(position + &quot; Kb/s&quot;);"
+        errorLine2="                                  ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/preferences/dialog/SeekBarDialogFragment.java"
+            line="78"
+            column="35"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="                textSpeed.setText(position + &quot; Kb/s&quot;);"
+        errorLine2="                                             ~~~~~~~">
+        <location
+            file="src/main/java/butter/droid/ui/preferences/dialog/SeekBarDialogFragment.java"
+            line="78"
+            column="46"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingLeft` you should probably also define `paddingRight` for right-to-left symmetry"
+        errorLine1="                            android:paddingLeft=&quot;@dimen/detail_horizontal_offset&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_episode_layout.xml"
+            line="126"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="                            android:paddingStart=&quot;@dimen/detail_horizontal_offset&quot;"
+        errorLine2="                            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_dialog_episode_layout.xml"
+            line="127"
+            column="29"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider adding `android:layout_marginEnd=&quot;@dimen/player_subtitles_margin&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_marginRight=&quot;@dimen/player_subtitles_margin&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider adding `android:layout_alignStart=&quot;@dimen/player_subtitles_margin&quot;` to better support right-to-left layouts"
+        errorLine1="            android:layout_alignLeft=&quot;@dimen/player_subtitles_margin&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_videoplayer.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+</issues>

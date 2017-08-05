@@ -15,17 +15,13 @@
  * along with Butter. If not, see <http://www.gnu.org/licenses/>.
  */
 
-apply plugin: 'com.android.library'
+apply from: "${project.rootDir}/config/gradle/android-library-config.gradle"
 apply plugin: 'kotlin-android'
 
 
 android {
-    compileSdkVersion rootProject.ext.compileSdk
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
 
@@ -39,14 +35,6 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    lintOptions {
-        textReport true
-    }
 }
 
 repositories {

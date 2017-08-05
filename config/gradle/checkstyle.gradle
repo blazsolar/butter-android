@@ -6,11 +6,15 @@ task checkstyle(type: Checkstyle) {
     showViolations true
     include '**/*.java'
     exclude '**/gen/**'
-    maxErrors(CHECKSTYLE_MAX_ERRORS as int)
+
+    if (project.hasProperty("CHECKSTYLE_MAX_ERRORS")) {
+        maxErrors(CHECKSTYLE_MAX_ERRORS as int)
+    }
+
     reports {
         html {
             destination project.provider {
-                project.file "${rootProject.buildDir}/reports/checkstyle/${project.name}.html"
+                project.file "${project.buildDir}/reports/checkstyle/checkstyle.html"
             }
         }
     }

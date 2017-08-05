@@ -5,11 +5,12 @@ import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-public class StrokedTextView extends TextView {
+public class StrokedTextView extends AppCompatTextView {
 
     private int mStrokeColor;
     private float mStrokeWidth;
