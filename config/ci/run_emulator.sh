@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ev
 
-if [ "$ANDROID_DEVICE" -ne "static" ]
+if [ "$ANDROID_DEVICE" != "static" ]
 then
   echo no | $ANDROID_HOME/tools/bin/avdmanager create avd -f -n emulator -k "system-images;$ANDROID_TARGET;google_apis;$ANDROID_ABI"
   $ANDROID_HOME/emulator/emulator -avd emulator -no-window -no-audio -wipe-data -no-boot-anim &

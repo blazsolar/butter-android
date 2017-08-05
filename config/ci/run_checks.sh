@@ -1,13 +1,13 @@
 #!/bin/bash
 set -ev
 
-if [ "$ANDROID_DEVICE" -eq "static" ]
+if [ "$ANDROID_DEVICE" == "static" ]
 then
   ./gradlew check-PdisablePreDex --stacktrace
-elif [ "$ANDROID_DEVICE" -eq "google_apis" ]
+elif [ "$ANDROID_DEVICE" == "google_apis" ]
 then
   ./gradlew :mobile:connectedCheck -PdisablePreDex --stacktrace
-elif [ "$ANDROID_DEVICE" -eq "android-tv" ]
+elif [ "$ANDROID_DEVICE" == "android-tv" ]
 then
   ./gradlew :tv:connectedCheck -PdisablePreDex --stacktrace
 else

@@ -19,7 +19,7 @@ $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" --channel=3
 $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-25" --channel=3
 $ANDROID_HOME/tools/bin/sdkmanager "extras;google;m2repository" --channel=3
 
-if [ "$ANDROID_DEVICE" -ne "static" ]
+if [ "$ANDROID_DEVICE" != "static" ]
 then
   $ANDROID_HOME/tools/bin/sdkmanager "system-images;$ANDROID_TARGET;$ANDROID_DEVICE;$ANDROID_ABI" --channel=3
 fi
