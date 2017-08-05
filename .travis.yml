@@ -15,3 +15,11 @@ before_install: ./config/ci/install_tools.sh
 before_script: ./config/ci/run_emulator.sh
 
 script: ./config/ci/run_checks.sh
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
