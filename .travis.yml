@@ -4,8 +4,8 @@ jdk: oraclejdk8
 env:
   matrix:
     - ANDROID_DEVICE=static ANDROID_TARGET=android-25
-    - ANDROID_DEVICE=google_apis ANDROID_TARGET=android-25
-    - ANDROID_DEVICE=android-tv ANDROID_TARGET=android-23
+#    - ANDROID_DEVICE=google_apis ANDROID_TARGET=android-25 # Disabled since we don't have androidTests
+#    - ANDROID_DEVICE=android-tv ANDROID_TARGET=android-23 # Disabled since we don't have androidTests
   global:
     - ADB_INSTALL_TIMEOUT=10
     - ANDROID_ABI=armeabi-v7a
