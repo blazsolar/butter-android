@@ -8,7 +8,7 @@ env:
     - ADB_INSTALL_TIMEOUT=10
 
 before_install:
-  - rm -rf $ANDROID_HOME/tools
+  - rm -rf $ANDROID_HOME/*
   - wget https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
   - unzip -o sdk-tools-linux-3859397.zip -d $ANDROID_HOME/
   - chmod +x gradlew
