@@ -3,7 +3,7 @@ set -ev
 
 if [ "$ANDROID_DEVICE" == "static" ]
 then
-  ./gradlew check-PdisablePreDex --stacktrace
+  ./gradlew check -PdisablePreDex --stacktrace
 elif [ "$ANDROID_DEVICE" == "google_apis" ]
 then
   ./gradlew :mobile:connectedCheck -PdisablePreDex --stacktrace
