@@ -3,7 +3,7 @@ sudo: required
 jdk: oraclejdk8
 env:
   matrix:
-    - ANDROID_TARGET=android-25 ANDROID_ABI=armeabi-v7a
+    - ANDROID_TARGET=android-25 ANDROID_ABI=arm64-v8a
   global:
     - ADB_INSTALL_TIMEOUT=10
 
@@ -17,12 +17,12 @@ before_install:
   - $ANDROID_HOME/tools/bin/sdkmanager "build-tools;26.0.1" --channel=3
   - $ANDROID_HOME/tools/bin/sdkmanager "emulator" --channel=3
   - $ANDROID_HOME/tools/bin/sdkmanager "platform-tools" --channel=3
-  - $ANDROID_HOME/tools/bin/sdkmanager "platforms;$ANDROID_TARGET" --channel=3
+  - $ANDROID_HOME/tools/bin/sdkmanager "platforms;android-25" --channel=3
   - $ANDROID_HOME/tools/bin/sdkmanager "system-images;$ANDROID_TARGET;default;$ANDROID_ABI" --channel=3
   - $ANDROID_HOME/tools/bin/sdkmanager "extras;google;m2repository" --channel=3
 
 before_script:
-  - echo no | $ANDROID_HOME/tools/bin/avdmanager create avd -f -n emulator -k "system-images;$ANDROID_TARGET;default;$ANDROID_ABI"
+  - echo no | $ANDROID_HOME/tools/bin/avdmanager create avd -f -n emulator -k "system-images;$ANDROID_TARGET;google_apis;$ANDROID_ABI"
   - $ANDROID_HOME/emulator/emulator -avd emulator -no-window -no-audio -wipe-data -no-boot-anim &
 
 script:
