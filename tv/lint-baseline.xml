@@ -85,7 +85,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="74"
+            line="69"
             column="5"/>
     </issue>
 
@@ -96,7 +96,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="75"
+            line="70"
             column="5"/>
     </issue>
 
@@ -621,6 +621,8 @@
         <location
             file="src/main/res/drawable-hdpi/ic_av_forward.png"/>
         <location
+            file="src/main/res/drawable-mdpi/ic_av_forward.png"/>
+        <location
             file="src/main/res/drawable-xhdpi/ic_av_forward.png"/>
         <location
             file="src/main/res/drawable-xxhdpi/ic_av_forward.png"/>
@@ -631,6 +633,8 @@
         message="The resource `R.drawable.ic_av_rewind` appears to be unused">
         <location
             file="src/main/res/drawable-hdpi/ic_av_rewind.png"/>
+        <location
+            file="src/main/res/drawable-mdpi/ic_av_rewind.png"/>
         <location
             file="src/main/res/drawable-xhdpi/ic_av_rewind.png"/>
         <location
@@ -719,6 +723,13 @@
 
     <issue
         id="IconDensities"
+        message="Missing the following drawables in `drawable-mdpi`: banner.png, butter_logo_placeholder.9.png, ic_settings.png">
+        <location
+            file="src/main/res/drawable-mdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
         message="Missing the following drawables in `drawable-xhdpi`: butter_logo_placeholder.9.png, header_logo.png, ic_settings.png">
         <location
             file="src/main/res/drawable-xhdpi"/>
@@ -729,35 +740,6 @@
         message="Missing the following drawables in `drawable-xxhdpi`: banner.png (found in drawable-xhdpi)">
         <location
             file="src/main/res/drawable-xxhdpi"/>
-    </issue>
-
-    <issue
-        id="IconMissingDensityFolder"
-        message="Missing density variation folders in `src/debug/res`: drawable-hdpi, drawable-mdpi, drawable-xxhdpi"
-        includedVariants="debug"
-        excludedVariants="release">
-        <location
-            file="src/debug/res"/>
-    </issue>
-
-    <issue
-        id="IconMissingDensityFolder"
-        message="Missing density variation folders in `src/main/res`: drawable-mdpi">
-        <location
-            file="src/main/res"/>
-    </issue>
-
-    <issue
-        id="GoogleAppIndexingWarning"
-        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
-        errorLine1="    &lt;application android:vmSafeMode=&quot;true&quot; />"
-        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        includedVariants="debug"
-        excludedVariants="release">
-        <location
-            file="src/debug/AndroidManifest.xml"
-            line="22"
-            column="5"/>
     </issue>
 
     <issue

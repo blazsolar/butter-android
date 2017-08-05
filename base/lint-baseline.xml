@@ -688,17 +688,6 @@
 
     <issue
         id="Typos"
-        message="&quot;video&quot; is a common misspelling; did you mean &quot;vídeo&quot; ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>A iniciar transmissão de video...&lt;/string>"
-        errorLine2="                                                        ^">
-        <location
-            file="src/main/res/values-pt/strings.xml"
-            line="245"
-            column="57"/>
-    </issue>
-
-    <issue
-        id="Typos"
         message="&quot;media&quot; is a common misspelling; did you mean &quot;medier&quot; ?"
         errorLine1="  &lt;string name=&quot;video_error_media_load_timeout&quot;>Tidsavbrudd ved lasting av media&lt;/string>"
         errorLine2="                                                                           ^">
@@ -1149,16 +1138,6 @@
             file="src/main/res/mipmap-xxhdpi/ic_launcher.png"/>
         <location
             file="src/main/res/mipmap-xxxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-hdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-mdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxxhdpi/ic_launcher.png"/>
     </issue>
 
     <issue
@@ -30621,17 +30600,6 @@
     <issue
         id="TypographyEllipsis"
         message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading_subs&quot;>Зареждане на субтитри...&lt;/string>"
-        errorLine2="                              ^">
-        <location
-            file="src/main/res/values-bg/strings.xml"
-            line="15"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
         errorLine1="  &lt;string name=&quot;searching&quot;>جاري البحث...&lt;/string>"
         errorLine2="                           ^">
         <location
@@ -30643,247 +30611,12 @@
     <issue
         id="TypographyEllipsis"
         message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;searching&quot;>Търсене...&lt;/string>"
-        errorLine2="                           ^">
-        <location
-            file="src/main/res/values-bg/strings.xml"
-            line="28"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;searching&quot;>Поиск...&lt;/string>"
-        errorLine2="                           ^">
-        <location
-            file="src/main/res/values-ru/strings.xml"
-            line="29"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;about_app&quot;>Acerca de...&lt;/string>"
-        errorLine2="                           ^">
-        <location
-            file="src/main/res/values-es-rAR/strings.xml"
-            line="70"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;read_more&quot;>Plus...&lt;/string>"
-        errorLine2="                           ^">
-        <location
-            file="src/main/res/values-fr/strings.xml"
-            line="94"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;about_series&quot;>Acerca de...&lt;/string>"
-        errorLine2="                              ^">
-        <location
-            file="src/main/res/values-es-rAR/strings.xml"
-            line="111"
-            column="31"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;open_with&quot;>開く...&lt;/string>"
-        errorLine2="                           ^">
-        <location
-            file="src/main/res/values-ja/strings.xml"
-            line="196"
-            column="28"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_buffering&quot;>Bufferen starten...&lt;/string>"
-        errorLine2="                                    ^">
-        <location
-            file="src/main/res/values-nl/strings.xml"
-            line="210"
-            column="37"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;waiting_for_subtitles&quot;>Aspettando i sottotitoli...&lt;/string>"
-        errorLine2="                                       ^">
-        <location
-            file="src/main/res/values-it/strings.xml"
-            line="213"
-            column="40"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>Starter beaming af video...&lt;/string>"
-        errorLine2="                               ^">
-        <location
-            file="src/main/res/values-da/strings.xml"
-            line="243"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>Iniciando transmisión de vídeo...&lt;/string>"
-        errorLine2="                               ^">
-        <location
-            file="src/main/res/values-es/strings.xml"
-            line="244"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>Начало на излъчване на видеото...&lt;/string>"
-        errorLine2="                               ^">
-        <location
-            file="src/main/res/values-bg/strings.xml"
-            line="245"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>Inizializzazione della trasmissione del video...&lt;/string>"
-        errorLine2="                               ^">
-        <location
-            file="src/main/res/values-it/strings.xml"
-            line="246"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;starting_beam&quot;>Подготовка к трансляции видео...&lt;/string>"
-        errorLine2="                               ^">
-        <location
-            file="src/main/res/values-ru/strings.xml"
-            line="248"
-            column="32"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
         errorLine1="  &lt;string name=&quot;loading&quot;>يتم التحميل...&lt;/string>"
         errorLine2="                         ^">
         <location
             file="src/main/res/values-ar/strings.xml"
             line="249"
             column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Lataa...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-fi/strings.xml"
-            line="255"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Indlæser...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-da/strings.xml"
-            line="260"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Cargando...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-es/strings.xml"
-            line="261"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Зареждане...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-bg/strings.xml"
-            line="262"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Caricamento...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-it/strings.xml"
-            line="263"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;loading&quot;>Загрузка...&lt;/string>"
-        errorLine2="                         ^">
-        <location
-            file="src/main/res/values-ru/strings.xml"
-            line="265"
-            column="26"/>
-    </issue>
-
-    <issue
-        id="TypographyEllipsis"
-        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?"
-        errorLine1="  &lt;string name=&quot;oops&quot;>Uups...&lt;/string>"
-        errorLine2="                      ^">
-        <location
-            file="src/main/res/values-pl/strings.xml"
-            line="280"
-            column="23"/>
-    </issue>
-
-    <issue
-        id="IconDipSize"
-        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.png: 48x48 dp (72x72 px), mipmap-mdpi/ic_launcher.png: 48x48 dp (48x48 px), mipmap-xhdpi/ic_launcher.png: 64x64 dp (128x128 px), mipmap-xxhdpi/ic_launcher.png: 48x48 dp (144x144 px), mipmap-xxxhdpi/ic_launcher.png: 48x48 dp (192x192 px)">
-        <location
-            file="src/debug/res/mipmap-hdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-mdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xhdpi/ic_launcher.png"/>
     </issue>
 
     <issue

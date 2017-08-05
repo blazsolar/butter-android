@@ -536,7 +536,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="76"
+            line="69"
             column="5"/>
     </issue>
 
@@ -547,7 +547,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="77"
+            line="70"
             column="5"/>
     </issue>
 
@@ -558,7 +558,7 @@
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="build.gradle"
-            line="87"
+            line="80"
             column="5"/>
     </issue>
 
@@ -769,23 +769,6 @@
             file="src/main/res/layout/fragment_videoplayer.xml"
             line="62"
             column="9"/>
-    </issue>
-
-    <issue
-        id="IconDipSize"
-        message="The image `ic_launcher.png` varies significantly in its density-independent (dip) size across the various density versions: mipmap-hdpi/ic_launcher.png: 48x48 dp (72x72 px), mipmap-mdpi/ic_launcher.png: 48x48 dp (48x48 px), mipmap-xhdpi/ic_launcher.png: 64x64 dp (128x128 px), mipmap-xxhdpi/ic_launcher.png: 48x48 dp (144x144 px), mipmap-xxxhdpi/ic_launcher.png: 48x48 dp (192x192 px)"
-        includedVariants="debug"
-        excludedVariants="release">
-        <location
-            file="src/debug/res/mipmap-mdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xxhdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-hdpi/ic_launcher.png"/>
-        <location
-            file="src/debug/res/mipmap-xhdpi/ic_launcher.png"/>
     </issue>
 
     <issue
