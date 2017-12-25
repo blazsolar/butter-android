@@ -32,13 +32,13 @@ jobs:
         - checkout
         - run:
             name: Download Dependencies
-            command: ./gradlew androidDependencies
+            command: ./gradlew androidDependencies --configure-on-demand -PdisablePreDex
         - run:
             name: Build release
-            command: ./gradlew mobile:assembleRelease
+            command: ./gradlew mobile:assembleRelease --configure-on-demand -PdisablePreDex
         - run:
             name: Build tv
-            command: ./gradlew tv:assembleRelease
+            command: ./gradlew tv:assembleRelease --configure-on-demand -PdisablePreDex
         - store_artifacts:
             path: mobie/build/outputs/apk/release/
             destination: apk/mobile
@@ -59,3 +59,4 @@ workflows:
               only:
                 - release
                 - master
+                - feature/circleOptimization
