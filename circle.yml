@@ -6,7 +6,7 @@ jobs:
       - image: circleci/android:api-27-alpha
     environment:
       _JAVA_OPTIONS: "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
-#      JVM_OPTS: -Xmx3200m
+      JVM_OPTS: -Xmx3200m
       GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
     steps:
       - checkout
@@ -28,7 +28,7 @@ jobs:
         - image: circleci/android:api-27-alpha
       environment:
         _JAVA_OPTIONS: "-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
-#        JVM_OPTS: -Xmx3200m
+        JVM_OPTS: -Xmx3200m
         GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
       steps:
         - checkout
