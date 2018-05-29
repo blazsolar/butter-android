@@ -56,14 +56,14 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/activity_vertical_margin">
 
-				<Button
+				<com.google.android.material.button.MaterialButton
 					android:id="@+id/btn_leave"
 					android:layout_weight="0.5"
 					android:layout_width="0dp"
 					android:layout_height="wrap_content"
 					android:text="@string/leave" />
 
-				<Button
+				<com.google.android.material.button.MaterialButton
 					android:id="@+id/btn_accept"
 					android:layout_weight="0.5"
 					android:layout_width="0dp"
